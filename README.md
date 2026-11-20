@@ -8,12 +8,23 @@ The fit is the published IDTV-AD method: a bounded, damped Gauss-Newton solver w
 voxel-wise S0 estimated in closed form, and parameter-specific total-variation regularization on the logarithm of each
 parameter (computed in voxel units) inside a fitting mask.
 
-## Running the app
+## Install (Windows, no Python needed)
 
-Windows build: open the `IVIM-DKI` folder and double-click `IVIM-DKI.exe`. No Python installation is needed. The app
-runs on the CPU.
+1. Go to the **Releases** page of this repository (right-hand side of the GitHub page) and download
+   `IVIM-DKI-Windows-x64.zip` (about 165 MB).
+2. Right-click the downloaded file → **Extract All…** and extract it to a folder you can write to, for example
+   `Documents` or `Desktop` (not `Program Files`). Do not run the app from inside the zip.
+3. Open the extracted `IVIM-DKI` folder and double-click **`IVIM-DKI.exe`**. The first start takes a few seconds.
+4. The first time, Windows may show *"Windows protected your PC"* because the app is not code-signed: click
+   **More info → Run anyway**.
 
-From source (Windows, macOS or Linux, Python 3.10+):
+Results are written to an `Analysis_Results` folder inside the `IVIM-DKI` folder. To try it out, load one of the files in
+`IVIM-DKI\test_data` (see *Test data* below). The app runs on the CPU: a 100×100×5 phantom takes about 35 s, a patient
+volume several minutes.
+
+To uninstall, delete the `IVIM-DKI` folder.
+
+## Running from source (Windows, macOS or Linux, Python 3.10+)
 
 ```
 pip install -r requirements.txt
