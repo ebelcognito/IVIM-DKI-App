@@ -1,0 +1,11 @@
+# build environment and outputs
+.venv/
+build/
+dist/
+*.spec
+__pycache__/
+# results written by the app
+Analysis_Results/
+Output_Parameter_Maps/
+Zoomed_Views/
+selftest_result.txt
